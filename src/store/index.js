@@ -3,8 +3,19 @@ import actions from './actions'
 import getters from './getters'
 import mutations from './mutations'
 
+const state = {
+    auth: {
+        token: null,
+        userId: null
+    },
+    board: {
+        lists: []
+    }
+}
+
 export default createStore({
     modules: {
+        state,
         getters,
         actions,
         mutations,
