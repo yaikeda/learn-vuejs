@@ -14,6 +14,6 @@ export default [{
     component: KbnTaskDetailModal,
     meta: {requiresAuth: true}
 }, {
-    path: '*',
+    path: '/:pathMatch(.*)',
     redirect: '/'
 }]

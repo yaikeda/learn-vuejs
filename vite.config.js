@@ -8,7 +8,7 @@ import nightwatchPlugin from 'vite-plugin-nightwatch'
 export default defineConfig({
   plugins: [
     vue(),
-    nightwatchPlugin(),
+    nightwatchPlugin()
   ],
   resolve: {
     alias: {

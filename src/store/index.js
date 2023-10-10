@@ -1,6 +1,6 @@
 import {createStore} from "vuex"
 import actions from './actions'
-import getters from './getters'
+// import getters from './getters'
 import mutations from './mutations'
 
 const state = {
@@ -16,7 +16,7 @@ const state = {
 export default createStore({
     modules: {
         state,
-        getters,
+        // getters,
         actions,
         mutations,
         strict: process.env.NODE_ENV !== 'production'
